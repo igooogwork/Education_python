@@ -2,8 +2,7 @@
 # и возвращающую True, если год високосный, и False иначе.
 year = input('Введите год:')
 year = int(year)
-leap_year = year % 4
-if leap_year == 0:
+if year % 4 == 0:
     is_year_leap = True
     print(is_year_leap)
 else:
