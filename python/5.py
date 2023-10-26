@@ -4,13 +4,7 @@
 # и на них в следующем году тоже будут проценты). 
 # Написать функцию bank, принимающая аргументы a и years,
 # и возвращающую сумму, которая будет на счету пользователя.
-a = input('Введите количество рублей:')
-a = int(a)
-years = input('На сколько лет:')
-years = int(years)
-i = 0
-bank = a
-while i < years:
-    i += 1
-    bank = bank * 1.1
-print(round(bank, 2))
+def bank(a,years):
+    for years in range(years):
+        a *= 1.1
+    return round(a, 2)
